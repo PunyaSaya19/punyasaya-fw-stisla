@@ -60,3 +60,9 @@ function isLogOut($url = "/main/index.php")
     die;
   }
 }
+
+function logout()
+{
+  unset($_SESSION['login']);
+  session_destroy();
+}
